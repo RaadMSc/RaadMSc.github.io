@@ -1,0 +1,3067 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Raad Mahmood | Civil Engineer & Structural Materials Specialist</title>
+
+    <meta name="description"
+          content="Raad Mahmood — Civil Engineer, MSc Civil Engineering, Structural Materials, Geopolymer Fire Assessment, Concrete Admixtures, Waterproofing and Sustainable Construction.">
+
+    <meta name="keywords"
+          content="Raad Mahmood, Civil Engineer, Structural Materials, Geopolymer, Concrete, Waterproofing, Sika, Construction Chemicals, Fire Resistance, Sustainable Concrete">
+
+    <meta name="author" content="Raad Mahmood">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+
+        /* =========================================================
+           RESET
+        ========================================================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Inter", sans-serif;
+            background: #07111f;
+            color: #e8eef7;
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ::selection {
+            background: #25d0a5;
+            color: #061018;
+        }
+
+
+        /* =========================================================
+           VARIABLES
+        ========================================================= */
+
+        :root {
+            --bg: #07111f;
+            --bg-2: #0a1626;
+            --card: rgba(15, 29, 47, 0.72);
+            --card-solid: #0e1c2d;
+            --border: rgba(255,255,255,0.09);
+
+            --text: #e8eef7;
+            --muted: #94a7bd;
+
+            --accent: #25d0a5;
+            --accent-2: #39bdf8;
+
+            --white: #ffffff;
+
+            --max-width: 1180px;
+
+            --shadow:
+                0 25px 70px rgba(0,0,0,0.30);
+        }
+
+
+        /* =========================================================
+           BACKGROUND
+        ========================================================= */
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            z-index: -2;
+
+            background:
+                radial-gradient(
+                    circle at 15% 15%,
+                    rgba(37,208,165,0.10),
+                    transparent 28%
+                ),
+                radial-gradient(
+                    circle at 85% 20%,
+                    rgba(57,189,248,0.10),
+                    transparent 28%
+                ),
+                radial-gradient(
+                    circle at 50% 90%,
+                    rgba(37,208,165,0.05),
+                    transparent 30%
+                );
+        }
+
+        body::after {
+            content: "";
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            pointer-events: none;
+
+            background-image:
+                linear-gradient(
+                    rgba(255,255,255,0.018) 1px,
+                    transparent 1px
+                ),
+                linear-gradient(
+                    90deg,
+                    rgba(255,255,255,0.018) 1px,
+                    transparent 1px
+                );
+
+            background-size: 60px 60px;
+            mask-image: linear-gradient(
+                to bottom,
+                black,
+                transparent 90%
+            );
+        }
+
+
+        /* =========================================================
+           GLOBAL
+        ========================================================= */
+
+        .container {
+            width: min(var(--max-width), calc(100% - 40px));
+            margin: auto;
+        }
+
+        section {
+            padding: 110px 0;
+            position: relative;
+        }
+
+        .section-label {
+            color: var(--accent);
+            font-size: 0.78rem;
+            font-weight: 800;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .section-title {
+            font-family: "Manrope", sans-serif;
+            font-size: clamp(2.2rem, 5vw, 4rem);
+            line-height: 1.05;
+            letter-spacing: -0.04em;
+            margin-bottom: 25px;
+        }
+
+        .section-description {
+            color: var(--muted);
+            max-width: 750px;
+            font-size: 1.03rem;
+            margin-bottom: 50px;
+        }
+
+
+        /* =========================================================
+           NAVIGATION
+        ========================================================= */
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+
+            z-index: 1000;
+
+            background: rgba(7,17,31,0.72);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+
+        nav {
+            height: 78px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-family: "Manrope", sans-serif;
+            font-size: 1.35rem;
+            font-weight: 800;
+            letter-spacing: -0.04em;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            font-size: 0.78rem;
+            color: #aebed1;
+            font-weight: 600;
+            transition: 0.25s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        .nav-button {
+            padding: 10px 16px;
+            border: 1px solid rgba(37,208,165,0.4);
+            border-radius: 8px;
+            color: var(--accent) !important;
+        }
+
+        .mobile-menu {
+            display: none;
+            font-size: 1.3rem;
+            cursor: pointer;
+        }
+
+
+        /* =========================================================
+           HERO
+        ========================================================= */
+
+        .hero {
+            min-height: 100vh;
+            padding-top: 150px;
+
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.35fr 0.65fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+
+            border: 1px solid rgba(37,208,165,0.2);
+            background: rgba(37,208,165,0.06);
+
+            color: var(--accent);
+
+            padding: 9px 14px;
+            border-radius: 50px;
+
+            font-size: 0.75rem;
+            font-weight: 700;
+
+            margin-bottom: 25px;
+        }
+
+        .hero h1 {
+            font-family: "Manrope", sans-serif;
+            font-size: clamp(4rem, 9vw, 8rem);
+            line-height: 0.82;
+            letter-spacing: -0.075em;
+            margin-bottom: 30px;
+        }
+
+        .hero h1 span {
+            color: var(--accent);
+        }
+
+        .hero-subtitle {
+            font-size: 1.35rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .hero-description {
+            max-width: 700px;
+            color: var(--muted);
+            font-size: 1.05rem;
+            margin-bottom: 35px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+
+            padding: 13px 19px;
+
+            border-radius: 9px;
+
+            font-size: 0.83rem;
+            font-weight: 700;
+
+            transition:
+                transform 0.25s ease,
+                background 0.25s ease,
+                border 0.25s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: #04110f;
+        }
+
+        .btn-primary:hover {
+            background: #45e1b9;
+        }
+
+        .btn-outline {
+            border: 1px solid var(--border);
+            color: var(--text);
+            background: rgba(255,255,255,0.02);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+
+        /* HERO CARD */
+
+        .hero-card {
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(20,39,60,0.9),
+                    rgba(10,23,38,0.8)
+                );
+
+            border: 1px solid var(--border);
+
+            border-radius: 25px;
+
+            padding: 25px;
+
+            box-shadow: var(--shadow);
+
+            text-align: center;
+
+            transform: rotate(2deg);
+
+            transition: 0.4s ease;
+        }
+
+        .hero-card:hover {
+            transform: rotate(0deg) translateY(-8px);
+        }
+
+        .profile-placeholder {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+
+            border-radius: 18px;
+
+            overflow: hidden;
+
+            margin-bottom: 22px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(37,208,165,0.15),
+                    rgba(57,189,248,0.1)
+                );
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .profile-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-card h3 {
+            font-family: "Manrope", sans-serif;
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+
+        .hero-card p {
+            color: var(--muted);
+            font-size: 0.85rem;
+        }
+
+        .hero-socials {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .hero-socials a {
+            width: 40px;
+            height: 40px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border: 1px solid var(--border);
+            border-radius: 10px;
+
+            color: var(--muted);
+
+            transition: 0.25s ease;
+        }
+
+        .hero-socials a:hover {
+            color: var(--accent);
+            border-color: var(--accent);
+            transform: translateY(-3px);
+        }
+
+
+        /* =========================================================
+           STATS
+        ========================================================= */
+
+        .stats {
+            padding: 45px 0;
+
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+
+            background: rgba(255,255,255,0.015);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .stat {
+            text-align: center;
+            padding: 10px 20px;
+            border-right: 1px solid var(--border);
+        }
+
+        .stat:last-child {
+            border-right: none;
+        }
+
+        .stat-number {
+            font-family: "Manrope", sans-serif;
+            color: var(--accent);
+            font-size: 2.3rem;
+            font-weight: 800;
+        }
+
+        .stat-title {
+            color: var(--muted);
+            font-size: 0.76rem;
+            margin-top: 4px;
+        }
+
+
+        /* =========================================================
+           ABOUT
+        ========================================================= */
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 80px;
+            align-items: start;
+        }
+
+        .about-text p {
+            color: var(--muted);
+            margin-bottom: 20px;
+        }
+
+        .education-card {
+            padding: 25px;
+
+            background: var(--card);
+
+            border: 1px solid var(--border);
+            border-radius: 14px;
+
+            margin-bottom: 15px;
+
+            transition: 0.3s ease;
+        }
+
+        .education-card:hover {
+            transform: translateX(6px);
+            border-color: rgba(37,208,165,0.35);
+        }
+
+        .education-card span {
+            color: var(--accent);
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+
+        .education-card h3 {
+            margin: 7px 0;
+            font-family: "Manrope", sans-serif;
+            font-size: 1rem;
+        }
+
+        .education-card p {
+            color: var(--muted);
+            font-size: 0.85rem;
+        }
+
+
+        /* =========================================================
+           RESEARCH
+        ========================================================= */
+
+        .research-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .research-card {
+            padding: 30px;
+
+            background: var(--card);
+
+            border: 1px solid var(--border);
+            border-radius: 16px;
+
+            transition: 0.35s ease;
+        }
+
+        .research-card:hover {
+            transform: translateY(-7px);
+            border-color: rgba(37,208,165,0.35);
+            box-shadow: var(--shadow);
+        }
+
+        .research-icon {
+            width: 48px;
+            height: 48px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: rgba(37,208,165,0.09);
+            color: var(--accent);
+
+            border-radius: 12px;
+
+            margin-bottom: 22px;
+        }
+
+        .research-card h3 {
+            font-family: "Manrope", sans-serif;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .research-card p {
+            color: var(--muted);
+            font-size: 0.87rem;
+        }
+
+
+        /* =========================================================
+           FEATURED RESEARCH
+        ========================================================= */
+
+        .featured-box {
+            display: grid;
+            grid-template-columns: 0.85fr 1.15fr;
+
+            border: 1px solid var(--border);
+            border-radius: 22px;
+
+            overflow: hidden;
+
+            background: var(--card);
+
+            box-shadow: var(--shadow);
+        }
+
+        .featured-image {
+            min-height: 450px;
+
+            display: flex;
+            align-items: flex-end;
+
+            padding: 35px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(37,208,165,0.22),
+                    rgba(57,189,248,0.10)
+                );
+        }
+
+        .featured-image::before {
+            content: "RESEARCH";
+            font-family: "Manrope", sans-serif;
+
+            font-size: clamp(3rem, 7vw, 7rem);
+            font-weight: 800;
+
+            line-height: 0.8;
+
+            color: rgba(255,255,255,0.05);
+        }
+
+        .featured-image-label {
+            position: absolute;
+            display: none;
+        }
+
+        .featured-content {
+            padding: 50px;
+        }
+
+        .featured-content h3 {
+            font-family: "Manrope", sans-serif;
+            font-size: 2rem;
+            line-height: 1.15;
+            margin-bottom: 20px;
+        }
+
+        .featured-content p {
+            color: var(--muted);
+            margin-bottom: 25px;
+        }
+
+        .tag-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+
+            margin-bottom: 30px;
+        }
+
+        .tag {
+            padding: 6px 10px;
+
+            background: rgba(255,255,255,0.045);
+
+            border: 1px solid var(--border);
+            border-radius: 50px;
+
+            color: #b7c7d9;
+
+            font-size: 0.72rem;
+        }
+
+
+        /* =========================================================
+           EXPERIENCE
+        ========================================================= */
+
+        .timeline {
+            position: relative;
+
+            max-width: 900px;
+
+            margin: 60px auto 0;
+        }
+
+        .timeline::before {
+            content: "";
+
+            position: absolute;
+
+            left: 8px;
+            top: 0;
+            bottom: 0;
+
+            width: 1px;
+
+            background:
+                linear-gradient(
+                    to bottom,
+                    var(--accent),
+                    rgba(37,208,165,0.05)
+                );
+        }
+
+        .timeline-item {
+            position: relative;
+
+            padding-left: 45px;
+
+            margin-bottom: 55px;
+        }
+
+        .timeline-dot {
+            position: absolute;
+
+            left: 3px;
+            top: 8px;
+
+            width: 11px;
+            height: 11px;
+
+            border-radius: 50%;
+
+            background: var(--accent);
+
+            box-shadow:
+                0 0 0 6px rgba(37,208,165,0.08);
+        }
+
+        .timeline-date {
+            color: var(--accent);
+
+            font-size: 0.75rem;
+            font-weight: 800;
+
+            letter-spacing: 0.08em;
+
+            margin-bottom: 8px;
+        }
+
+        .timeline-item h3 {
+            font-family: "Manrope", sans-serif;
+            font-size: 1.3rem;
+        }
+
+        .timeline-company {
+            color: #c3d0de;
+            font-size: 0.85rem;
+            font-weight: 600;
+
+            margin-bottom: 12px;
+        }
+
+        .timeline-item p {
+            color: var(--muted);
+            font-size: 0.9rem;
+            max-width: 750px;
+        }
+
+
+        /* =========================================================
+           EXPERTISE
+        ========================================================= */
+
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .expertise-card {
+            padding: 28px;
+
+            background: var(--card);
+
+            border: 1px solid var(--border);
+            border-radius: 16px;
+        }
+
+        .expertise-card h3 {
+            font-family: "Manrope", sans-serif;
+            margin-bottom: 18px;
+        }
+
+        .expertise-card li {
+            color: var(--muted);
+            font-size: 0.85rem;
+
+            padding: 8px 0;
+
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .expertise-card li::before {
+            content: "→";
+            color: var(--accent);
+            margin-right: 9px;
+        }
+
+
+        /* =========================================================
+           CERTIFICATIONS
+        ========================================================= */
+
+        .certificate-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .certificate-card {
+            padding: 30px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(18,34,53,0.9),
+                    rgba(11,24,39,0.75)
+                );
+
+            border: 1px solid var(--border);
+
+            border-radius: 16px;
+
+            transition: 0.3s ease;
+        }
+
+        .certificate-card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(37,208,165,0.3);
+        }
+
+        .certificate-card > i {
+            color: var(--accent);
+            font-size: 1.7rem;
+            margin-bottom: 20px;
+        }
+
+        .certificate-card h3 {
+            font-family: "Manrope", sans-serif;
+            font-size: 1.05rem;
+        }
+
+        .certificate-card p {
+            color: var(--accent);
+            font-size: 0.78rem;
+            font-weight: 700;
+            margin: 5px 0 15px;
+        }
+
+        .certificate-card small {
+            color: var(--muted);
+            font-size: 0.82rem;
+            line-height: 1.6;
+        }
+
+
+        /* =========================================================
+           SAFETY
+        ========================================================= */
+
+        #safety {
+            background:
+                linear-gradient(
+                    180deg,
+                    transparent,
+                    rgba(57,189,248,0.025),
+                    transparent
+                );
+        }
+
+
+        /* =========================================================
+           TEACHING
+        ========================================================= */
+
+        .teaching-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .teaching-item {
+            padding: 30px;
+
+            background: var(--card);
+
+            border: 1px solid var(--border);
+            border-radius: 16px;
+
+            text-align: center;
+        }
+
+        .teaching-item i {
+            color: var(--accent);
+            font-size: 1.7rem;
+            margin-bottom: 15px;
+        }
+
+        .teaching-item h3 {
+            font-family: "Manrope", sans-serif;
+        }
+
+        .teaching-item p {
+            color: var(--muted);
+            margin-top: 5px;
+        }
+
+
+        /* =========================================================
+           PROJECTS
+        ========================================================= */
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .project-card {
+            min-height: 310px;
+
+            padding: 35px;
+
+            border: 1px solid var(--border);
+            border-radius: 20px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(17,34,54,0.85),
+                    rgba(10,22,36,0.75)
+                );
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
+            position: relative;
+            overflow: hidden;
+
+            transition: 0.35s ease;
+        }
+
+        .project-card::before {
+            content: "";
+
+            position: absolute;
+            width: 250px;
+            height: 250px;
+
+            right: -100px;
+            top: -100px;
+
+            border-radius: 50%;
+
+            background: rgba(37,208,165,0.08);
+        }
+
+        .project-card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(37,208,165,0.35);
+        }
+
+        .project-number {
+            position: absolute;
+            top: 25px;
+            right: 30px;
+
+            font-size: 3rem;
+            font-family: "Manrope", sans-serif;
+            font-weight: 800;
+
+            color: rgba(255,255,255,0.05);
+        }
+
+        .project-card h3 {
+            font-family: "Manrope", sans-serif;
+            font-size: 1.4rem;
+            margin-bottom: 12px;
+        }
+
+        .project-card p {
+            color: var(--muted);
+            font-size: 0.86rem;
+        }
+
+
+        /* =========================================================
+           PUBLICATIONS
+        ========================================================= */
+
+        .publication {
+            display: grid;
+            grid-template-columns: 100px 1fr auto;
+            gap: 25px;
+            align-items: center;
+
+            padding: 25px 0;
+
+            border-bottom: 1px solid var(--border);
+        }
+
+        .publication:first-child {
+            border-top: 1px solid var(--border);
+        }
+
+        .publication-year {
+            color: var(--accent);
+            font-weight: 800;
+        }
+
+        .publication h3 {
+            font-family: "Manrope", sans-serif;
+            font-size: 1rem;
+        }
+
+        .publication p {
+            color: var(--muted);
+            font-size: 0.8rem;
+            margin-top: 5px;
+        }
+
+        .publication-status {
+            padding: 6px 10px;
+            border-radius: 50px;
+            border: 1px solid rgba(37,208,165,0.25);
+            color: var(--accent);
+            font-size: 0.7rem;
+        }
+
+
+        /* =========================================================
+           LANGUAGES
+        ========================================================= */
+
+        .languages-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .language-card {
+            padding: 28px;
+
+            border: 1px solid var(--border);
+            border-radius: 15px;
+
+            background: var(--card);
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .language-card h3 {
+            font-family: "Manrope", sans-serif;
+        }
+
+        .language-card span {
+            color: var(--accent);
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+
+
+        /* =========================================================
+           CONTACT
+        ========================================================= */
+
+        .contact-box {
+            padding: 60px;
+
+            border: 1px solid var(--border);
+            border-radius: 24px;
+
+            background:
+                radial-gradient(
+                    circle at 80% 20%,
+                    rgba(37,208,165,0.1),
+                    transparent 30%
+                ),
+                var(--card);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        .contact-box h2 {
+            font-family: "Manrope", sans-serif;
+            font-size: 3rem;
+            line-height: 1.05;
+            margin-bottom: 20px;
+        }
+
+        .contact-box > .contact-grid > div > p {
+            color: var(--muted);
+            max-width: 500px;
+        }
+
+        .contact-links {
+            display: grid;
+            gap: 12px;
+        }
+
+        .contact-link {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+            padding: 16px;
+
+            border: 1px solid var(--border);
+            border-radius: 11px;
+
+            transition: 0.25s ease;
+        }
+
+        .contact-link:hover {
+            border-color: var(--accent);
+            transform: translateX(5px);
+        }
+
+        .contact-link i {
+            width: 25px;
+            color: var(--accent);
+        }
+
+        .contact-link span {
+            color: var(--muted);
+            font-size: 0.82rem;
+        }
+
+
+        /* =========================================================
+           FOOTER
+        ========================================================= */
+
+        footer {
+            padding: 35px 0;
+
+            border-top: 1px solid var(--border);
+
+            color: var(--muted);
+            font-size: 0.75rem;
+        }
+
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-name {
+            color: var(--text);
+            font-weight: 700;
+        }
+
+        .footer-socials {
+            display: flex;
+            gap: 15px;
+        }
+
+        .footer-socials a:hover {
+            color: var(--accent);
+        }
+
+
+        /* =========================================================
+           SCROLL ANIMATION
+        ========================================================= */
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: 0.8s ease;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+
+        /* =========================================================
+           RESPONSIVE
+        ========================================================= */
+
+        @media (max-width: 1000px) {
+
+            .nav-links {
+                gap: 14px;
+            }
+
+            .nav-links a {
+                font-size: 0.7rem;
+            }
+
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-card {
+                max-width: 400px;
+                margin: auto;
+            }
+
+            .about-grid,
+            .featured-box,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .research-grid,
+            .expertise-grid,
+            .certificate-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .featured-image {
+                min-height: 280px;
+            }
+
+        }
+
+
+        @media (max-width: 760px) {
+
+            section {
+                padding: 80px 0;
+            }
+
+            .container {
+                width: min(100% - 30px, var(--max-width));
+            }
+
+            .mobile-menu {
+                display: block;
+            }
+
+            .nav-links {
+                position: fixed;
+
+                top: 78px;
+                left: 15px;
+                right: 15px;
+
+                display: none;
+                flex-direction: column;
+
+                padding: 25px;
+
+                background: #0b1929;
+
+                border: 1px solid var(--border);
+                border-radius: 14px;
+
+                box-shadow: var(--shadow);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .hero {
+                padding-top: 120px;
+            }
+
+            .hero h1 {
+                font-size: clamp(4rem, 20vw, 6rem);
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .stat {
+                border-bottom: 1px solid var(--border);
+            }
+
+            .stat:nth-child(2) {
+                border-right: none;
+            }
+
+            .stat:nth-child(3),
+            .stat:nth-child(4) {
+                border-bottom: none;
+            }
+
+            .research-grid,
+            .expertise-grid,
+            .certificate-grid,
+            .projects-grid,
+            .languages-grid,
+            .teaching-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .featured-content {
+                padding: 30px;
+            }
+
+            .featured-content h3 {
+                font-size: 1.6rem;
+            }
+
+            .publication {
+                grid-template-columns: 1fr;
+                gap: 8px;
+            }
+
+            .contact-box {
+                padding: 30px;
+            }
+
+            .contact-box h2 {
+                font-size: 2.3rem;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+<!-- ============================================================
+     NAVIGATION
+============================================================ -->
+
+<header>
+
+    <div class="container">
+
+        <nav>
+
+            <a href="#home" class="logo">
+                RAAD<span>.</span>
+            </a>
+
+            <div class="nav-links" id="navLinks">
+
+                <a href="#about">About</a>
+                <a href="#research">Research</a>
+                <a href="#experience">Experience</a>
+                <a href="#expertise">Expertise</a>
+                <a href="#projects">Projects</a>
+                <a href="#certificates">Certificates</a>
+                <a href="#safety">Safety</a>
+                <a href="#contact" class="nav-button">Contact</a>
+
+            </div>
+
+            <div class="mobile-menu" id="mobileMenu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<!-- ============================================================
+     HERO
+============================================================ -->
+
+<section class="hero" id="home">
+
+    <div class="container hero-grid">
+
+        <div class="reveal">
+
+            <div class="hero-badge">
+                <i class="fa-solid fa-circle"></i>
+                Civil Engineer • Structural Materials • Construction
+            </div>
+
+            <h1>
+                Raad<br>
+                <span>Mahmood</span>
+            </h1>
+
+            <div class="hero-subtitle">
+                MSc Civil Engineering
+            </div>
+
+            <p class="hero-description">
+
+                Civil Engineer with 10+ years of experience in
+                construction engineering, site supervision, technical
+                consultancy, concrete admixtures, waterproofing,
+                insulation, construction chemicals and sustainable
+                construction materials.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#experience" class="btn btn-primary">
+                    <i class="fa-solid fa-briefcase"></i>
+                    Experience
+                </a>
+
+                <a href="#research" class="btn btn-outline">
+                    <i class="fa-solid fa-flask"></i>
+                    Research
+                </a>
+
+                <!-- CHANGE THIS FILE NAME TO YOUR CV -->
+                <a href="Raad-Mahmood-CV.pdf"
+                   class="btn btn-outline"
+                   target="_blank">
+
+                    <i class="fa-solid fa-file-pdf"></i>
+                    Download CV
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-card reveal">
+
+            <!--
+                Replace "profile.jpg" with your actual photo.
+                Put profile.jpg in the same GitHub folder.
+            -->
+
+            <div class="profile-placeholder">
+
+                <img src="profile.jpg"
+                     alt="Raad Mahmood Civil Engineer"
+                     onerror="this.style.display='none';">
+
+            </div>
+
+            <h3>Raad Mahmood</h3>
+
+            <p>
+                Civil Engineer<br>
+                MSc Civil Engineering<br>
+                Structural Materials & Construction Technology
+            </p>
+
+            <div class="hero-socials">
+
+                <!-- Replace # with your actual URLs -->
+
+                <a href="https://www.linkedin.com/in/raad-mahmood-885242201/"
+                   target="_blank"
+                   aria-label="LinkedIn">
+
+                    <i class="fa-brands fa-linkedin-in"></i>
+
+                </a>
+
+                <a href="#research"
+                   aria-label="Research">
+
+                    <i class="fa-solid fa-flask"></i>
+
+                </a>
+
+                <a href="#projects"
+                   aria-label="Projects">
+
+                    <i class="fa-solid fa-building"></i>
+
+                </a>
+
+                <a href="https://github.com/shahab44"
+                   target="_blank"
+                   aria-label="GitHub">
+
+                    <i class="fa-brands fa-github"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ============================================================
+     STATS
+============================================================ -->
+
+<section class="stats">
+
+    <div class="container stats-grid">
+
+        <div class="stat reveal">
+
+            <div class="stat-number">10+</div>
+
+            <div class="stat-title">
+                Years Engineering Experience
+            </div>
+
+        </div>
+
+
+        <div class="stat reveal">
+
+            <div class="stat-number">$500K+</div>
+
+            <div class="stat-title">
+                Project Value Managed
+            </div>
+
+        </div>
+
+
+        <div class="stat reveal">
+
+            <div class="stat-number">88</div>
+
+            <div class="stat-title">
+                ACI Professional Development Hours
+            </div>
+
+        </div>
+
+
+        <div class="stat reveal">
+
+            <div class="stat-number">74</div>
+
+            <div class="stat-title">
+                Sika Training Hours
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ============================================================
+     ABOUT
+============================================================ -->
+
+<section id="about">
+
+    <div class="container">
+
+        <div class="section-label reveal">
+            About Me
+        </div>
+
+        <h2 class="section-title reveal">
+            Civil Engineering meets<br>
+            Advanced Construction Materials.
+        </h2>
+
+
+        <div class="about-grid">
+
+            <div class="about-text reveal">
+
+                <p>
+                    I am a Civil Engineer with more than 10 years of
+                    professional experience spanning site supervision,
+                    technical consultancy, construction chemicals,
+                    concrete technology and project execution.
+                </p>
+
+                <p>
+                    My professional background combines practical
+                    construction experience with specialized knowledge
+                    of concrete admixtures, waterproofing systems,
+                    insulation, structural strengthening, repair
+                    materials and sustainable construction technologies.
+                </p>
+
+                <p>
+                    My academic research focuses on low-carbon and
+                    fire-resistant geopolymer materials, with particular
+                    interest in alkali-activated materials, microstructural
+                    evolution and high-temperature behavior.
+                </p>
+
+                <p>
+                    I also have experience developing technical proposals,
+                    supporting clients, conducting site investigations,
+                    supervising construction activities and managing
+                    quality control.
+                </p>
+
+            </div>
+
+
+            <div class="reveal">
+
+                <div class="education-card">
+
+                    <span>2024 — 2026</span>
+
+                    <h3>
+                        MSc in Civil Engineering
+                    </h3>
+
+                    <p>
+                        Cyprus International University
+                    </p>
+
+                </div>
+
+
+                <div class="education-card">
+
+                    <span>2010 — 2015</span>
+
+                    <h3>
+                        B.Sc. in Civil Engineering
+                    </h3>
+
+                    <p>
+                        Salahaddin University
+                    </p>
+
+                </div>
+
+
+                <div class="education-card">
+
+                    <span>2008 — 2010</span>
+
+                    <h3>
+                        Diploma in Engineering Drawing
+                    </h3>
+
+                    <p>
+                        Shaqlawa Technical College
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ============================================================
+     RESEARCH
+============================================================ -->
+
+<section id="research">
+
+    <div class="container">
+
+        <div class="section-label reveal">
+            Research
+        </div>
+
+        <h2 class="section-title reveal">
+            Structural Materials &<br>
+            Sustainable Construction
+        </h2>
+
+        <p class="section-description reveal">
+
+            My research focuses on sustainable and high-performance
+            construction materials, with particular emphasis on
+            geopolymer systems, fire resistance, microstructural
+            development and low-carbon construction.
+
+        </p>
+
+
+        <div class="research-grid">
+
+            <div class="research-card reveal">
+
+                <div class="research-icon">
+                    <i class="fa-solid fa-fire-flame-curved"></i>
+                </div>
+
+                <h3>
+                    Geopolymer Fire Resistance
+                </h3>
+
+                <p>
+                    Assessment of pressed geopolymer blocks under
+                    elevated temperatures and investigation of their
+                    thermal stability.
+                </p>
+
+            </div>
+
+
+            <div class="research-card reveal">
+
+                <div class="research-icon">
+                    <i class="fa-solid fa-flask"></i>
+                </div>
+
+                <h3>
+                    Alkali-Activated Materials
+                </h3>
+
+                <p>
+                    Research involving fly ash, silica fume,
+                    waste glass powder and different Si/Al
+                    molar ratios.
+                </p>
+
+            </div>
+
+
+            <div class="research-card reveal">
+
+                <div class="research-icon">
+                    <i class="fa-solid fa-leaf"></i>
+                </div>
+
+                <h3>
+                    Low-Carbon Construction
+                </h3>
+
+                <p>
+                    Sustainable construction materials and
+                    approaches aimed at reducing environmental
+                    impact.
+                </p>
+
+            </div>
+
+
+            <div class="research-card reveal">
+
+                <div class="research-icon">
+                    <i class="fa-solid fa-microscope"></i>
+                </div>
+
+                <h3>
+                    Microstructural Analysis
+                </h3>
+
+                <p>
+                    Investigation of material evolution using
+                    XRD, FTIR, SEM and related characterization
+                    techniques.
+                </p>
+
+            </div>
+
+
+            <div class="research-card reveal">
+
+                <div class="research-icon">
+                    <i class="fa-solid fa-temperature-high"></i>
+                </div>
+
+                <h3>
+                    High-Temperature Behavior
+                </h3>
+
+                <p>
+                    Evaluation of geopolymer material transformation
+                    at 600°C, 800°C and 1000°C.
+                </p>
+
+            </div>
+
+
+            <div class="research-card reveal">
+
+                <div class="research-icon">
+                    <i class="fa-solid fa-recycle"></i>
+                </div>
+
+                <h3>
+                    Waste-Based Materials
+                </h3>
+
+                <p>
+                    Investigation of industrial and recycled
+                    materials for sustainable construction
+                    applications.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ============================================================
+     FEATURED THESIS
+============================================================ -->
+
+<section>
+
+    <div class="container">
+
+        <div class="section-label reveal">
+            Featured Research
+        </div>
+
+        <h2 class="section-title reveal">
+            MSc Thesis
+        </h2>
+
+
+        <div class="featured-box reveal">
+
+            <div class="featured-image">
+
+                <div class="featured-image-label">
+                    Geopolymer • Fire Resistance
+                </div>
+
+            </div>
+
+
+            <div class="featured-content">
+
+                <h3>
+                    Fire Resistance Assessment of Geopolymer
+                    Pressed Blocks with Different Si/Al Molar Ratios
+                </h3>
+
+                <p>
+                    MSc research investigating pressed geopolymer blocks
+                    manufactured using fly ash, silica fume and waste
+                    glass powder. The research evaluates the influence
+                    of Si/Al molar ratio on material performance and
+                    microstructural evolution under high-temperature
+                    exposure.
+                </p>
+
+
+                <div class="tag-list">
+
+                    <span class="tag">Geopolymer</span>
+                    <span class="tag">Fly Ash</span>
+                    <span class="tag">Silica Fume</span>
+                    <span class="tag">Waste Glass Powder</span>
+                    <span class="tag">Si/Al Ratio</span>
+                    <span class="tag">Fire Resistance</span>
+                    <span class="tag">XRD</span>
+                    <span class="tag">FTIR</span>
+                    <span class="tag">SEM</span>
+
+                </div>
+
+
+                <a href="#contact"
+                   class="btn btn-primary">
+
+                    Discuss Research
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ============================================================
+     EXPERIENCE
+============================================================ -->
+
+<section id="experience">
+
+    <div class="container">
+
+        <div class="section-label reveal">
+            Professional Experience
+        </div>
+
+        <h2 class="section-title reveal">
+            Engineering Journey
+        </h2>
+
+
+        <div class="timeline">
+
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-date">
+                    DEC 2021 — JUL 2026
+                </div>
+
+                <h3>
+                    Independent Civil Engineering Consultant
+                </h3>
+
+                <div class="timeline-company">
+                    Erbil, Iraq
+                </div>
+
+                <p>
+                    Established an independent practice specializing
+                    in residential renovations and building solutions.
+                    Applied expertise in waterproofing and construction
+                    chemicals while managing material selection, site
+                    supervision, project execution and quality control.
+                </p>
+
+            </div>
+
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-date">
+                    APR 2021 — AUG 2021
+                </div>
+
+                <h3>
+                    Sales Engineer
+                </h3>
+
+                <div class="timeline-company">
+                    PetroPrime — Mapei Distributor
+                </div>
+
+                <p>
+                    Provided client technical support and training through
+                    site visits and remote consultations. Developed
+                    technical proposals for waterproofing and concrete
+                    repair and supervised structural strengthening and
+                    liquid membrane applications.
+                </p>
+
+            </div>
+
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-date">
+                    NOV 2019 — MAR 2021
+                </div>
+
+                <h3>
+                    Sales Engineer
+                </h3>
+
+                <div class="timeline-company">
+                    Sika Iraq
+                </div>
+
+                <p>
+                    Specialized in concrete admixtures and construction
+                    chemicals. Secured contracts with major projects,
+                    a large precast concrete company and five ready-mix
+                    factories, while establishing a new reseller point
+                    for tile adhesives.
+                </p>
+
+            </div>
+
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-date">
+                    JUN 2019 — FEB 2020
+                </div>
+
+                <h3>
+                    Project Engineer & Site Supervisor
+                </h3>
+
+                <div class="timeline-company">
+                    Private Villa Construction — Weziran, Erbil
+                </div>
+
+                <p>
+                    Managed a high-end residential project with an
+                    approximate budget of $500,000, including foundation
+                    and structural works, architectural elements, MEP
+                    coordination, finishing works, procurement, labour
+                    supervision and quality control.
+                </p>
+
+            </div>
+
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-date">
+                    NOV 2015 — AUG 2016
+                </div>
+
+                <h3>
+                    Site Engineer
+                </h3>
+
+                <div class="timeline-company">
+                    Brothers City Project — Kirkuk
+                </div>
+
+                <p>
+                    Supervised civil works for a major residential
+                    development consisting of 480 houses and auxiliary
+                    facilities including a mosque, school, gym,
+                    car park and gardens.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ============================================================
+     EXPERTISE
+============================================================ -->
+
+<section id="expertise">
+
+    <div class="container">
+
+        <div class="section-label reveal">
+            Technical Expertise
+        </div>
+
+        <h2 class="section-title reveal">
+            Engineering Capabilities
+        </h2>
+
+
+        <div class="expertise-grid">
+
+
+            <div class="expertise-card reveal">
+
+                <h3>
+                    Concrete & Materials
+                </h3>
+
+                <ul>
+                    <li>Concrete Admixtures</li>
+                    <li>Concrete Materials</li>
+                    <li>Geopolymers</li>
+                    <li>Alkali-Activated Materials</li>
+                    <li>Low-Carbon Concrete</li>
+                    <li>Fire-Resistant Materials</li>
+                </ul>
+
+            </div>
+
+
+            <div class="expertise-card reveal">
+
+                <h3>
+                    Construction Chemicals
+                </h3>
+
+                <ul>
+                    <li>Waterproofing Systems</li>
+                    <li>Insulation</li>
+                    <li>Concrete Repair</li>
+                    <li>Structural Strengthening</li>
+                    <li>Industrial Coatings</li>
+                    <li>Construction Chemicals</li>
+                </ul>
+
+            </div>
+
+
+            <div class="expertise-card reveal">
+
+                <h3>
+                    Construction Engineering
+                </h3>
+
+                <ul>
+                    <li>Site Supervision</li>
+                    <li>Quality Control</li>
+                    <li>Material Selection</li>
+                    <li>Project Execution</li>
+                    <li>Technical Consultancy</li>
+                    <li>Technical Proposals</li>
+                </ul>
+
+            </div>
+
+
+            <div class="expertise-card reveal">
+
+                <h3>
+                    Project Controls
+                </h3>
+
+                <ul>
+                    <li>Primavera P6</li>
+                    <li>Microsoft Project</li>
+                    <li>Project Coordination</li>
+                    <li>Planning</li>
+                    <li>Technical Documentation</li>
+                </ul>
+
+            </div>
+
+
+            <div class="expertise-card reveal">
+
+                <h3>
+                    Engineering Software
+                </h3>
+
+                <ul>
+                    <li>AutoCAD</li>
+                    <li>SketchUp</li>
+                    <li>Primavera P6</li>
+                    <li>Microsoft Project</li>
+                    <li>Microsoft Office</li>
+                </ul>
+
+            </div>
+
+
+            <div class="expertise-card reveal">
+
+                <h3>
+                    Technical Sales
+                </h3>
+
+                <ul>
+                    <li>Client Training</li>
+                    <li>Technical Presentations</li>
+                    <li>Product Selection</li>
+                    <li>Technical Proposals</li>
+                    <li>Site Troubleshooting</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ============================================================
+     PROJECTS
+============================================================ -->
+
+<section id="projects">
+
+    <div class="container">
+
+        <div class="section-label reveal">
+            Selected Projects
+        </div>
+
+        <h2 class="section-title reveal">
+            Engineering in Practice
+        </h2>
+
+        <p class="section-description reveal">
+            Selected professional projects demonstrating experience
+            across residential construction, site engineering,
+            construction chemicals and technical consultancy.
+        </p>
+
+
+        <div class="projects-grid">
+
+
+            <div class="project-card reveal">
+
+                <div class="project-number">
+                    01
+                </div>
+
+                <h3>
+                    $500K+ Private Villa
+                </h3>
+
+                <p>
+                    Project engineering and site supervision for a
+                    high-end residential development in Weziran,
+                    Erbil, covering structural, architectural,
+                    MEP coordination, procurement and quality control.
+                </p>
+
+            </div>
+
+
+            <div class="project-card reveal">
+
+                <div class="project-number">
+                    02
+                </div>
+
+                <h3>
+                    Brothers City — 480 Houses
+                </h3>
+
+                <p>
+                    Site engineering and civil works supervision for
+                    a major residential development in Kirkuk with
+                    480 houses and supporting facilities.
+                </p>
+
+            </div>
+
+
+            <div class="project-card reveal">
+
+                <div class="project-number">
+                    03
+                </div>
+
+                <h3>
+                    Sika Iraq Technical Sales
+                </h3>
+
+                <p>
+                    Concrete admixtures and construction chemical
+                    solutions supporting major projects, precast
+                    production and ready-mix factories.
+                </p>
+
+            </div>
+
+
+            <div class="project-card reveal">
+
+                <div class="project-number">
+                    04
+                </div>
+
+                <h3>
+                    Waterproofing & Repair
+                </h3>
+
+                <p>
+                    Technical consultancy, material selection and
+                    site supervision for waterproofing, concrete
+                    repair and structural strengthening applications.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ============================================================
+     CERTIFICATIONS
+============================================================ -->
+
+<section id="certificates">
+
+    <div class="container">
+
+        <div class="section-label reveal">
+            Certifications & Professional Development
+        </div>
+
+        <h2 class="section-title reveal">
+            Continuous Professional Development
+        </h2>
+
+
+        <div class="certificate-grid">
+
+
+            <div class="certificate-card reveal">
+
+                <i class="fa-solid fa-certificate"></i>
+
+                <h3>
+                    American Concrete Institute
+                </h3>
+
+                <p>
+                    88 PDH • June 2026
+                </p>
+
+                <small>
+                    Concrete construction, materials, low-carbon
+                    concrete, repair, anchorage, GFRP and
+                    constructability.
+                </small>
+
+            </div>
+
+
+            <div class="certificate-card reveal">
+
+                <i class="fa-solid fa-building"></i>
+
+                <h3>
+                    Sika Professional Training
+                </h3>
+
+                <p>
+                    74 PDH • 2019–2021
+                </p>
+
+                <small>
+                    Concrete admixtures, waterproofing, polyurea,
+                    shotcrete, roofing, refurbishment, strengthening
+                    and fire protection.
+                </small>
+
+            </div>
+
+
+            <div class="certificate-card reveal">
+
+                <i class="fa-solid fa-bolt"></i>
+
+                <h3>
+                    Zayton Vocational Training Centre
+                </h3>
+
+                <p>
+                    200 PDH • September 2008
+                </p>
+
+                <small>
+                    Electrical systems, wiring, home electrical
+                    installation and safety protocols.
+                </small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ============================================================
+     PROCESS SAFETY
+============================================================ -->
+
+<section id="safety">
+
+    <div class="container">
+
+        <div class="section-label reveal">
+            Process Safety & EHS
+        </div>
+
+        <h2 class="section-title reveal">
+            Expanding Into<br>
+            Industrial Safety
+        </h2>
+
+        <p class="section-description reveal">
+
+            Alongside my civil engineering background, I have undertaken
+            independent technical study in process safety management,
+            industrial regulations and operational excellence.
+
+        </p>
+
+
+        <div class="expertise-grid">
+
+
+            <div class="expertise-card reveal">
+
+                <h3>
+                    Process Safety Management
+                </h3>
+
+                <ul>
+                    <li>Management of Change (MOC)</li>
+                    <li>Process Hazard Analysis (PHA)</li>
+                    <li>HAZOP</li>
+                    <li>FMEA</li>
+                    <li>Mechanical Integrity</li>
+                </ul>
+
+            </div>
+
+
+            <div class="expertise-card reveal">
+
+                <h3>
+                    Risk & Incident Management
+                </h3>
+
+                <ul>
+                    <li>Root Cause Analysis</li>
+                    <li>Incident Investigation</li>
+                    <li>Risk-Based Process Safety</li>
+                    <li>LOPA</li>
+                    <li>Job Safety Analysis</li>
+                </ul>
+
+            </div>
+
+
+            <div class="expertise-card reveal">
+
+                <h3>
+                    Standards & Regulations
+                </h3>
+
+                <ul>
+                    <li>OSHA 29 CFR 1910</li>
+                    <li>ISO 45001</li>
+                    <li>ISO 14001</li>
+                    <li>ISO 50001</li>
+                    <li>GHS / SDS</li>
+                    <li>REACH / CLP</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ============================================================
+     TEACHING
+============================================================ -->
+
+<section id="teaching">
+
+    <div class="container">
+
+        <div class="section-label reveal">
+            Academic Experience
+        </div>
+
+        <h2 class="section-title reveal">
+            Teaching Assistant
+        </h2>
+
+        <p class="section-description reveal">
+            Cyprus International University • Spring Semester 2025
+        </p>
+
+
+        <div class="featured-box reveal">
+
+            <div class="featured-image">
+
+                <div class="featured-image-label">
+                    ACADEMIA
+                </div>
+
+            </div>
+
+
+            <div class="featured-content">
+
+                <h3>
+                    Academic Teaching Assistant
+                </h3>
+
+                <p>
+                    Supported faculty members in delivering eight core
+                    Civil Engineering courses, contributing to laboratory
+                    operations, technical demonstrations, student
+                    mentoring and academic documentation.
+                </p>
+
+
+                <div class="tag-list">
+
+                    <span class="tag">Materials Science</span>
+                    <span class="tag">Fluid Mechanics</span>
+                    <span class="tag">Construction Engineering</span>
+                    <span class="tag">Laboratory Operations</span>
+                    <span class="tag">Student Mentoring</span>
+                    <span class="tag">Technical Demonstrations</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ============================================================
+     PUBLICATIONS / RESEARCH OUTPUT
+============================================================ -->
+
+<section id="publications">
+
+    <div class="container">
+
+        <div class="section-label reveal">
+            Research Output
+        </div>
+
+        <h2 class="section-title reveal">
+            Publications & Research
+        </h2>
+
+        <p class="section-description reveal">
+            Research activities focused on sustainable construction
+            materials, geopolymer technology and high-temperature
+            performance.
+        </p>
+
+
+        <div class="publication reveal">
+
+            <div class="publication-year">
+                2026
+            </div>
+
+            <div>
+
+                <h3>
+                    Fire Resistance Assessment of Geopolymer
+                    Pressed Blocks with Different Si/Al Molar Ratios
+                </h3>
+
+                <p>
+                    MSc Thesis • Civil Engineering • Structural Materials
+                </p>
+
+            </div>
+
+            <div class="publication-status">
+                MSc Research
+            </div>
+
+        </div>
+
+
+        <div class="publication reveal">
+
+            <div class="publication-year">
+                2026
+            </div>
+
+            <div>
+
+                <h3>
+                    Sustainable & Low-Carbon Construction Materials
+                </h3>
+
+                <p>
+                    Research interests in waste-based materials,
+                    alkali-activated systems and sustainable concrete.
+                </p>
+
+            </div>
+
+            <div class="publication-status">
+                Research
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ============================================================
+     LANGUAGES
+============================================================ -->
+
+<section>
+
+    <div class="container">
+
+        <div class="section-label reveal">
+            Languages
+        </div>
+
+        <h2 class="section-title reveal">
+            Communication
+        </h2>
+
+
+        <div class="languages-grid">
+
+            <div class="language-card reveal">
+
+                <h3>
+                    English
+                </h3>
+
+                <span>
+                    B2
+                </span>
+
+            </div>
+
+
+            <div class="language-card reveal">
+
+                <h3>
+                    Arabic
+                </h3>
+
+                <span>
+                    Native
+                </span>
+
+            </div>
+
+
+            <div class="language-card reveal">
+
+                <h3>
+                    Kurdish
+                </h3>
+
+                <span>
+                    Native
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ============================================================
+     CONTACT
+============================================================ -->
+
+<section id="contact">
+
+    <div class="container">
+
+        <div class="contact-box reveal">
+
+            <div class="contact-grid">
+
+
+                <div>
+
+                    <div class="section-label">
+                        Contact
+                    </div>
+
+                    <h2>
+                        Let's build<br>
+                        something better.
+                    </h2>
+
+                    <p>
+                        I am open to engineering opportunities,
+                        technical consultancy, construction-material
+                        projects, research collaborations and
+                        professional networking.
+                    </p>
+
+                </div>
+
+
+                <div class="contact-links">
+
+
+                    <!-- Replace with your real email -->
+
+                    <a href="mailto:YOUR-EMAIL@example.com"
+                       class="contact-link">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <div>
+
+                            <strong>Email</strong>
+
+                            <br>
+
+                            <span>
+                                YOUR-EMAIL@example.com
+                            </span>
+
+                        </div>
+
+                    </a>
+
+
+                    <a href="https://www.linkedin.com/in/raad-mahmood-885242201/"
+                       target="_blank"
+                       class="contact-link">
+
+                        <i class="fa-brands fa-linkedin"></i>
+
+                        <div>
+
+                            <strong>LinkedIn</strong>
+
+                            <br>
+
+                            <span>
+                                Professional Profile
+                            </span>
+
+                        </div>
+
+                    </a>
+
+
+                    <a href="https://github.com/shahab44"
+                       target="_blank"
+                       class="contact-link">
+
+                        <i class="fa-brands fa-github"></i>
+
+                        <div>
+
+                            <strong>GitHub</strong>
+
+                            <br>
+
+                            <span>
+                                Projects & Website
+                            </span>
+
+                        </div>
+
+                    </a>
+
+
+                    <a href="#home"
+                       class="contact-link">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <div>
+
+                            <strong>Location</strong>
+
+                            <br>
+
+                            <span>
+                                Kurdistan Region, Iraq
+                            </span>
+
+                        </div>
+
+                    </a>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-inner">
+
+            <div>
+                © <span id="year"></span>
+                <span class="footer-name">
+                    Raad Mahmood
+                </span>.
+                Civil Engineer.
+            </div>
+
+
+            <div class="footer-socials">
+
+                <a href="https://www.linkedin.com/in/raad-mahmood-885242201/"
+                   target="_blank">
+
+                    <i class="fa-brands fa-linkedin"></i>
+
+                </a>
+
+                <a href="https://github.com/shahab44"
+                   target="_blank">
+
+                    <i class="fa-brands fa-github"></i>
+
+                </a>
+
+                <a href="#research">
+
+                    <i class="fa-solid fa-flask"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- ============================================================
+     JAVASCRIPT
+============================================================ -->
+
+<script>
+
+    /* =========================================================
+       MOBILE MENU
+    ========================================================= */
+
+    const mobileMenu = document.getElementById("mobileMenu");
+    const navLinks = document.getElementById("navLinks");
+
+    mobileMenu.addEventListener("click", function () {
+
+        navLinks.classList.toggle("active");
+
+        const icon = mobileMenu.querySelector("i");
+
+        if (navLinks.classList.contains("active")) {
+
+            icon.classList.remove("fa-bars");
+            icon.classList.add("fa-xmark");
+
+        } else {
+
+            icon.classList.remove("fa-xmark");
+            icon.classList.add("fa-bars");
+
+        }
+
+    });
+
+
+    /* Close mobile menu after clicking */
+
+    document.querySelectorAll(".nav-links a").forEach(function(link) {
+
+        link.addEventListener("click", function() {
+
+            navLinks.classList.remove("active");
+
+            const icon = mobileMenu.querySelector("i");
+
+            icon.classList.remove("fa-xmark");
+            icon.classList.add("fa-bars");
+
+        });
+
+    });
+
+
+    /* =========================================================
+       SCROLL REVEAL
+    ========================================================= */
+
+    const revealElements =
+        document.querySelectorAll(".reveal");
+
+    const revealObserver =
+        new IntersectionObserver(
+
+            function(entries) {
+
+                entries.forEach(function(entry) {
+
+                    if (entry.isIntersecting) {
+
+                        entry.target.classList.add("active");
+
+                    }
+
+                });
+
+            },
+
+            {
+                threshold: 0.12
+            }
+
+        );
+
+
+    revealElements.forEach(function(element) {
+
+        revealObserver.observe(element);
+
+    });
+
+
+    /* =========================================================
+       CURRENT YEAR
+    ========================================================= */
+
+    document.getElementById("year").textContent =
+        new Date().getFullYear();
+
+
+    /* =========================================================
+       NAVIGATION ACTIVE STATE
+    ========================================================= */
+
+    const sections =
+        document.querySelectorAll("section[id]");
+
+    const navigationLinks =
+        document.querySelectorAll(".nav-links a");
+
+
+    window.addEventListener("scroll", function() {
+
+        let current = "";
+
+        sections.forEach(function(section) {
+
+            const sectionTop =
+                section.offsetTop - 120;
+
+            if (window.scrollY >= sectionTop) {
+
+                current = section.getAttribute("id");
+
+            }
+
+        });
+
+
+        navigationLinks.forEach(function(link) {
+
+            link.style.color = "";
+
+            if (
+                link.getAttribute("href") ===
+                "#" + current
+            ) {
+
+                link.style.color =
+                    "var(--accent)";
+
+            }
+
+        });
+
+    });
+
+
+    /* =========================================================
+       HEADER BACKGROUND ON SCROLL
+    ========================================================= */
+
+    const header =
+        document.querySelector("header");
+
+    window.addEventListener("scroll", function() {
+
+        if (window.scrollY > 50) {
+
+            header.style.background =
+                "rgba(7,17,31,0.92)";
+
+        } else {
+
+            header.style.background =
+                "rgba(7,17,31,0.72)";
+
+        }
+
+    });
+
+</script>
+
+
+</body>
+</html>
