@@ -58,6 +58,38 @@
             margin: 0 auto;
         }
 
+        /* ===== IMAGE PROTECTION ===== */
+        img {
+            -webkit-user-drag: none;
+            user-drag: none;
+            -webkit-user-select: none;
+            user-select: none;
+            pointer-events: none;
+        }
+
+        .gallery-item img,
+        .profile-image img,
+        .hero::after {
+            pointer-events: none;
+            -webkit-user-drag: none;
+            user-drag: none;
+        }
+
+        /* Subtle copyright watermark on gallery images */
+        .gallery-item::after {
+            content: "© Raad Mahmood";
+            position: absolute;
+            bottom: 34px;
+            right: 12px;
+            font-size: 0.45rem;
+            color: rgba(255, 255, 255, 0.25);
+            pointer-events: none;
+            letter-spacing: 0.06em;
+            text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+            opacity: 0.6;
+            z-index: 2;
+        }
+
         /* ===== HEADER ===== */
         header {
             position: fixed;
@@ -618,14 +650,18 @@
         }
         .gallery-label {
             position: absolute;
-            bottom: 16px;
-            left: 16px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 18px 16px 14px 16px;
+            background: linear-gradient(to top, rgba(11, 33, 29, 0.85) 0%, transparent 100%);
             font-size: 0.7rem;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.06em;
             color: white;
-            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+            pointer-events: none;
+            z-index: 1;
         }
 
         /* ===== CERTIFICATES ===== */
@@ -917,7 +953,7 @@
     <!-- ===== HERO ===== -->
     <section class="hero" id="home">
         <div class="container hero-grid">
-            <!-- ===== UPDATED HERO CONTENT (your revised text) ===== -->
+            <!-- ===== UPDATED HERO CONTENT ===== -->
             <div class="hero-content reveal">
                 <!-- Tagline -->
                 <div class="hero-sub" style="letter-spacing: 0.15em; font-size: 0.7rem;">
@@ -965,11 +1001,10 @@
                     <a href="#contact" class="btn btn-outline">Contact</a>
                 </div>
             </div>
-            <!-- ===== END UPDATED HERO CONTENT ===== -->
+            <!-- ===== END HERO CONTENT ===== -->
 
             <div class="hero-profile reveal">
                 <div class="profile-image">
-                    <!-- REPLACE with your profile photo -->
                     <img src="images/profile.jpg" alt="Raad Mahmood" />
                 </div>
                 <h3>Raad Mahmood</h3>
@@ -1142,59 +1177,63 @@
         </div>
     </section>
 
-<!-- ===== GALLERY ===== -->
-<section id="gallery">
-    <div class="container">
-        <div class="section-label">08 / Gallery</div>
-        <h2 class="section-title">Engineering in practice.</h2>
-        <p class="section-description">Laboratory research, materials testing, and construction engineering work.</p>
-        <div class="gallery-grid">
+    <!-- ===== GALLERY ===== -->
+    <section id="gallery">
+        <div class="container">
+            <div class="section-label">08 / Gallery</div>
+            <h2 class="section-title">Engineering in practice.</h2>
+            <p class="section-description">Laboratory research, materials testing, and construction engineering work.</p>
+            <div class="gallery-grid">
 
-            <div class="gallery-item">
-                <img src="images/gallery-1.jpg" alt="Geopolymer research" />
-                <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 18px 16px 14px 16px; background: linear-gradient(to top, rgba(11, 33, 29, 0.85) 0%, transparent 100%); font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: white; pointer-events: none;">
-                    Geopolymer Research
+                <div class="gallery-item">
+                    <img src="images/gallery-1.jpg" alt="Geopolymer research" />
+                    <div class="gallery-label">Geopolymer Research</div>
                 </div>
-            </div>
 
-            <div class="gallery-item">
-                <img src="images/gallery-2.jpg" alt="Materials testing" />
-                <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 18px 16px 14px 16px; background: linear-gradient(to top, rgba(11, 33, 29, 0.85) 0%, transparent 100%); font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: white; pointer-events: none;">
-                    Materials Testing
+                <div class="gallery-item">
+                    <img src="images/gallery-2.jpg" alt="Materials testing" />
+                    <div class="gallery-label">Materials Testing</div>
                 </div>
-            </div>
 
-            <div class="gallery-item">
-                <img src="images/gallery-3.jpg" alt="Concrete technology" />
-                <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 18px 16px 14px 16px; background: linear-gradient(to top, rgba(11, 33, 29, 0.85) 0%, transparent 100%); font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: white; pointer-events: none;">
-                    Concrete Technology
+                <div class="gallery-item">
+                    <img src="images/gallery-3.jpg" alt="Concrete technology" />
+                    <div class="gallery-label">Concrete Technology</div>
                 </div>
-            </div>
 
-            <div class="gallery-item">
-                <img src="images/gallery-4.jpg" alt="Microstructure" />
-                <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 18px 16px 14px 16px; background: linear-gradient(to top, rgba(11, 33, 29, 0.85) 0%, transparent 100%); font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: white; pointer-events: none;">
-                    Microstructure
+                <div class="gallery-item">
+                    <img src="images/gallery-4.jpg" alt="Microstructure" />
+                    <div class="gallery-label">Microstructure</div>
                 </div>
-            </div>
 
-            <div class="gallery-item">
-                <img src="images/gallery-5.jpg" alt="Construction materials" />
-                <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 18px 16px 14px 16px; background: linear-gradient(to top, rgba(11, 33, 29, 0.85) 0%, transparent 100%); font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: white; pointer-events: none;">
-                    Construction Materials
+                <div class="gallery-item">
+                    <img src="images/gallery-5.jpg" alt="Construction materials" />
+                    <div class="gallery-label">Construction Materials</div>
                 </div>
-            </div>
 
-            <div class="gallery-item">
-                <img src="images/gallery-6.jpg" alt="Engineering practice" />
-                <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 18px 16px 14px 16px; background: linear-gradient(to top, rgba(11, 33, 29, 0.85) 0%, transparent 100%); font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: white; pointer-events: none;">
-                    Engineering Practice
+                <div class="gallery-item">
+                    <img src="images/gallery-6.jpg" alt="Engineering practice" />
+                    <div class="gallery-label">Engineering Practice</div>
                 </div>
-            </div>
 
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <!-- ===== LANGUAGES ===== -->
+    <section id="languages" style="background:var(--cream-dark);">
+        <div class="container">
+            <div class="section-label">09 / Languages</div>
+            <h2 class="section-title">Communication across <br />engineering environments.</h2>
+            <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(160px,1fr));">
+                <div class="card"><h3>English</h3><p style="color:var(--orange); font-weight:600; font-size:0.75rem;">Professional</p></div>
+                <div class="card"><h3>Arabic</h3><p style="color:var(--orange); font-weight:600; font-size:0.75rem;">Professional</p></div>
+                <div class="card"><h3>Kurdish — Sorani</h3><p style="color:var(--orange); font-weight:600; font-size:0.75rem;">Professional</p></div>
+                <div class="card"><h3>German</h3><p style="color:var(--orange); font-weight:600; font-size:0.75rem;">A1–B2</p></div>
+                <div class="card"><h3>Turkish</h3><p style="color:var(--orange); font-weight:600; font-size:0.75rem;">Basic</p></div>
+            </div>
+        </div>
+    </section>
+
     <!-- ===== CONTACT ===== -->
     <section id="contact">
         <div class="container">
@@ -1207,7 +1246,7 @@
                 <div>
                     <div class="contact-link"><i class="fas fa-envelope"></i><div><strong>Email</strong><span>Ra3d.ce@gmail.com</span></div></div>
                     <a class="contact-link" href="https://www.linkedin.com/in/raad-mahmood-885242201/" target="_blank"><i class="fab fa-linkedin-in"></i><div><strong>LinkedIn</strong><span>Professional profile</span></div></a>
-                    <a class="contact-link" href="#" target="_blank"><i class="fab fa-github"></i><div><strong>GitHub</strong><span>Research &amp; engineering projects</span></div></a>
+                    <a class="contact-link" href="https://github.com/RaadMSc" target="_blank"><i class="fab fa-github"></i><div><strong>GitHub</strong><span>Research &amp; engineering projects</span></div></a>
                     <a class="contact-link" href="#research"><i class="fas fa-flask"></i><div><strong>Research</strong><span>Geopolymer · Concrete · Fire Assessment</span></div></a>
                 </div>
             </div>
@@ -1220,7 +1259,7 @@
             <div>© <span id="year"></span> <span class="footer-name">Raad Mahmood</span> · Civil Engineer</div>
             <div class="footer-socials">
                 <a href="https://www.linkedin.com/in/raad-mahmood-885242201/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://github.com/RaadMSc" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="mailto:Ra3d.ce@gmail.com"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
@@ -1265,6 +1304,30 @@
                 item.classList.remove('active');
                 if (item.getAttribute('href') === '#' + current) item.classList.add('active');
             });
+        });
+
+        // ===== BLOCK RIGHT-CLICK ON ALL IMAGES =====
+        document.querySelectorAll('img').forEach(img => {
+            img.addEventListener('contextmenu', (e) => {
+                e.preventDefault();
+                return false;
+            });
+        });
+
+        // Also block on containers that might have background images
+        document.querySelectorAll('.gallery-item, .profile-image, .hero').forEach(el => {
+            el.addEventListener('contextmenu', (e) => {
+                e.preventDefault();
+                return false;
+            });
+        });
+
+        // Prevent keyboard shortcuts (Ctrl+S, Ctrl+U)
+        document.addEventListener('keydown', (e) => {
+            if (e.ctrlKey && (e.key === 's' || e.key === 'u' || e.key === 'S' || e.key === 'U')) {
+                e.preventDefault();
+                return false;
+            }
         });
     </script>
 
