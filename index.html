@@ -7,6 +7,14 @@
     <meta name="description" content="Raad Mahmood – Civil Engineer, MSc Structural Materials, specialising in geopolymer fire assessment, concrete admixtures, waterproofing, insulation, construction chemicals, and sustainable concrete." />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
+    <!-- ===== FAVICON ===== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0b211d">
+    <meta name="theme-color" content="#0b211d">
+
     <style>
         /* ===== VARIABLES (same palette) ===== */
         :root {
@@ -66,7 +74,6 @@
             user-select: none;
             pointer-events: none;
         }
-
         .gallery-item img,
         .profile-image img,
         .hero::after {
@@ -109,7 +116,6 @@
             align-items: center;
             justify-content: space-between;
         }
-        /* ===== HEADER BRAND ===== */
         .logo {
             display: flex;
             align-items: center;
@@ -120,7 +126,6 @@
             font-weight: 700;
             color: var(--green);
         }
-
         .logo-mark {
             width: 34px;
             height: 34px;
@@ -137,7 +142,6 @@
             position: relative;
             overflow: hidden;
         }
-
         .logo-mark::after {
             content: "";
             position: absolute;
@@ -148,13 +152,11 @@
             bottom: 6px;
             transform: rotate(-45deg);
         }
-
         .logo-text {
             display: block;
             min-width: 0;
             line-height: 1.15;
         }
-
         .logo-name {
             font-family: "Century Gothic", "Trebuchet MS", Arial, sans-serif;
             font-size: 1.02rem;
@@ -162,7 +164,6 @@
             letter-spacing: -0.035em;
             white-space: nowrap;
         }
-
         .logo-role {
             display: block;
             margin-top: 2px;
@@ -173,7 +174,6 @@
             font-weight: 600;
             white-space: nowrap;
         }
-
         .nav-links {
             display: flex;
             align-items: center;
@@ -182,7 +182,6 @@
             flex: 1;
             min-width: 0;
         }
-
         .nav-links a {
             font-size: 0.66rem;
             font-weight: 700;
@@ -194,7 +193,6 @@
             transition: color 0.2s, border-color 0.2s;
             white-space: nowrap;
         }
-
         .nav-links a:hover,
         .nav-links a.active {
             color: var(--orange);
@@ -206,11 +204,9 @@
                 flex-basis: 185px;
                 width: 185px;
             }
-
             .nav-links {
                 gap: 13px;
             }
-
             .nav-links a {
                 font-size: 0.60rem;
                 letter-spacing: 0.045em;
@@ -335,7 +331,6 @@
             border-color: var(--orange);
             color: var(--orange);
         }
-
         .hero-profile {
             display: flex;
             flex-direction: column;
@@ -473,7 +468,7 @@
             font-size: 0.8rem;
         }
 
-        /* ===== CARDS (for research, expertise, etc.) ===== */
+        /* ===== CARDS ===== */
         .card-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -524,7 +519,7 @@
             color: var(--orange);
         }
 
-        /* ===== FEATURED RESEARCH (wide card) ===== */
+        /* ===== FEATURED RESEARCH ===== */
         .featured {
             margin-top: 60px;
             display: grid;
@@ -809,8 +804,6 @@
         .footer-socials a:hover {
             color: var(--orange);
         }
-
-        /* ===== VISITOR COUNTER – CSS ===== */
         .visitor-counter {
             display: inline-flex;
             align-items: center;
@@ -829,6 +822,151 @@
             min-width: 30px;
             display: inline-block;
             text-align: center;
+        }
+
+        /* ===== BUILDING PROBLEMS – SINGLE IMAGE SLIDER ===== */
+        .healer-slider-wrapper {
+            max-width: 100%;
+            margin: 0 auto;
+            padding-bottom: 20px;
+        }
+        .healer-slide-card {
+            position: relative;
+            border-radius: var(--radius);
+            border: 2px solid var(--green);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            background: var(--cream);
+            aspect-ratio: 16 / 9;
+        }
+        .healer-slide-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            pointer-events: none;
+        }
+        .healer-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 40px 20px 20px;
+            background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 100%);
+            text-align: center;
+            pointer-events: none;
+        }
+        .healer-overlay h3 {
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            font-family: "Century Gothic", Arial, sans-serif;
+            font-size: clamp(1rem, 2vw, 1.5rem);
+        }
+        .healer-nav-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(45, 55, 55, 0.7);
+            color: #fff;
+            border: none;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 10;
+            transition: 0.2s;
+            font-size: 1.2rem;
+        }
+        .healer-nav-btn:hover {
+            background: var(--orange);
+            transform: translateY(-50%) scale(1.05);
+        }
+        .healer-prev { left: 20px; }
+        .healer-next { right: 20px; }
+        .healer-dots {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 24px;
+        }
+        .healer-dots button {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            border: none;
+            background: #d1d1d1;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .healer-dots button.active {
+            background: var(--orange);
+            transform: scale(1.15);
+        }
+
+        /* ===== NEW ACI CERTIFICATE SECTION ===== */
+        #aci-certificates {
+            background: var(--cream);
+        }
+        .aci-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 40px;
+            align-items: start;
+        }
+        .badge-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        .badge-grid img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1/1;
+            object-fit: contain;
+            border-radius: var(--radius);
+            border: 1px solid var(--line);
+            box-shadow: var(--shadow);
+            transition: 0.3s;
+            background: var(--white);
+            padding: 10px;
+        }
+        .badge-grid img:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 28px rgba(11, 33, 29, 0.08);
+        }
+        .aci-list ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .aci-list ul li {
+            padding: 14px 16px;
+            background: var(--white);
+            border-radius: var(--radius);
+            border: 1px solid var(--line);
+            margin-bottom: 10px;
+            font-size: 0.85rem;
+            color: var(--black);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            transition: 0.2s;
+            box-shadow: var(--shadow);
+            line-height: 1.4;
+        }
+        .aci-list ul li i {
+            color: var(--orange);
+            font-size: 1rem;
+            flex-shrink: 0;
+        }
+        .aci-list ul li:hover {
+            border-color: var(--orange);
+            transform: translateX(4px);
         }
 
         /* ===== RESPONSIVE ===== */
@@ -897,6 +1035,21 @@
                 flex-direction: column;
                 text-align: center;
             }
+            .healer-nav-btn {
+                width: 34px;
+                height: 34px;
+                font-size: 0.9rem;
+            }
+            .healer-prev { left: 10px; }
+            .healer-next { right: 10px; }
+            
+            .aci-grid {
+                grid-template-columns: 1fr;
+            }
+            .badge-grid {
+                grid-template-columns: repeat(4, 1fr); 
+                gap: 15px;
+            }
         }
 
         @media (max-width: 700px) {
@@ -905,20 +1058,20 @@
                 width: auto;
                 transform: translateX(-4px);
             }
-
             .logo-mark {
                 width: 34px;
                 height: 34px;
                 flex-basis: 34px;
             }
-
             .logo-name {
                 font-size: 0.92rem;
                 font-weight: 700;
             }
-
             .logo-role {
                 font-size: 0.50rem;
+            }
+            .badge-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
         }
 
@@ -937,6 +1090,20 @@
                 flex-direction: column;
                 gap: 12px;
             }
+            .healer-slide-card {
+                aspect-ratio: 4/3;
+            }
+            .healer-overlay h3 {
+                font-size: 0.9rem;
+            }
+            .aci-list ul li {
+                font-size: 0.8rem;
+                padding: 12px;
+            }
+            .badge-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
         }
 
         /* ===== REVEAL ANIMATION ===== */
@@ -951,7 +1118,6 @@
         }
     </style>
 </head>
-
 <body>
 
     <!-- ===== HEADER ===== -->
@@ -961,7 +1127,7 @@
                 <div class="logo-mark">RM</div>
                 <div class="logo-text">
                     <div class="logo-name">Raad Mahmood</div>
-                    <span class="logo-role">MSc Civil Engineering</span>
+                    <span class="logo-role">Civil Engineer · Materials</span>
                 </div>
             </a>
             <button class="menu-btn" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
@@ -972,6 +1138,8 @@
                 <a href="#experience">Experience</a>
                 <a href="#expertise">Expertise</a>
                 <a href="#projects">Projects</a>
+                <a href="#building-problems">Building Problems</a>
+                <a href="#aci-certificates">ACI Certificates</a>
                 <a href="#certificates">Certificates</a>
                 <a href="#publications">Publications</a>
                 <a href="#gallery">Gallery</a>
@@ -1163,14 +1331,73 @@
         </div>
     </section>
 
+    <!-- ===== BUILDING PROBLEMS HEALER ===== -->
+    <section id="building-problems" style="background:var(--cream-dark);">
+        <div class="container">
+            <div class="section-label">06 / Building Problems Healer</div>
+            <h2 class="section-title">Waterproofing jobs <br />&amp; application projects.</h2>
+            <p class="section-description">Professional waterproofing and construction chemical solutions – real projects, real results.</p>
+
+            <div class="healer-slider-wrapper">
+                <div class="healer-slide-card" id="healerSlideCard">
+                    <img id="healerSlideImage" src="images/healer-1.jpg" alt="Waterproofing Project" />
+                    <div class="healer-overlay">
+                        <h3 id="healerSlideTitle">BASEMENT WATERPROOFING - COMMERCIAL BUILDING</h3>
+                    </div>
+                    <button class="healer-nav-btn healer-prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="healer-nav-btn healer-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="healer-dots" id="healerDots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== NEW ACI CERTIFICATE PROGRAM ===== -->
+    <section id="aci-certificates">
+        <div class="container">
+            <div class="section-label">07 / ACI Certificate Program</div>
+            <h2 class="section-title">ACI University <br />Specializations &amp; Credentials.</h2>
+            <p class="section-description">Professional development and specializations through the American Concrete Institute (ACI) University program.</p>
+
+            <div class="aci-grid">
+                <div class="aci-badges">
+                    <div class="badge-grid">
+                        <!-- Place your 8 ACI certificate images here. 
+                             Rename your images to aci-1.jpg, aci-2.jpg, ... aci-8.jpg for easy mapping -->
+                        <img src="images/aci/aci-1.jpg" alt="Low-Carbon Concrete Fundamentals" />
+                        <img src="images/aci/aci-2.jpg" alt="Low-Carbon Concrete Quantification" />
+                        <img src="images/aci/aci-3.jpg" alt="GFRP Bars Design" />
+                        <img src="images/aci/aci-4.jpg" alt="Concrete Constructability" />
+                        <img src="images/aci/aci-5.jpg" alt="Fundamentals of Concrete and Materials" />
+                        <img src="images/aci/aci-6.jpg" alt="Fundamentals of Concrete Construction" />
+                        <img src="images/aci/aci-7.jpg" alt="Repair Application Procedures" />
+                        <img src="images/aci/aci-8.jpg" alt="Anchorage Design" />
+                    </div>
+                </div>
+                <div class="aci-list">
+                    <ul>
+                        <li><i class="fas fa-folder"></i> Certificate Program Anchorage Design</li>
+                        <li><i class="fas fa-folder"></i> Certificate Program Concrete Constructability</li>
+                        <li><i class="fas fa-folder"></i> Certificate Program Designing Concrete Structures Reinforced with GFRP Bars Using the ACI CODE-440.11-22</li>
+                        <li><i class="fas fa-folder"></i> Certificate Program Fundamentals of Concrete and Materials</li>
+                        <li><i class="fas fa-folder"></i> Certificate Program Fundamentals of Concrete Construction</li>
+                        <li><i class="fas fa-folder"></i> Certificate Program Low-Carbon Concrete Fundamentals, Materials, and Innovations</li>
+                        <li><i class="fas fa-folder"></i> Certificate Program Low-Carbon Concrete Quantification, Design, and Compliance</li>
+                        <li><i class="fas fa-folder"></i> Certificate Program Repair Application Procedures</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- ===== CERTIFICATES ===== -->
     <section id="certificates">
         <div class="container">
-            <div class="section-label">06 / Certificates</div>
+            <div class="section-label">08 / Certificates</div>
             <h2 class="section-title">Professional development.</h2>
             <p class="section-description">Professional training and certifications in engineering, construction, safety, and technical practice.</p>
             <div class="cert-grid">
-                <div class="cert-item reveal"><i class="fas fa-certificate"></i><h4>NEBOSH IGC (SOON)</h4><p>International General Certificate in Occupational Health and Safety</p></div>
+                <div class="cert-item reveal"><i class="fas fa-certificate"></i><h4>NEBOSH IGC</h4><p>International General Certificate in Occupational Health and Safety</p></div>
                 <div class="cert-item reveal"><i class="fas fa-building"></i><h4>Civil Engineering Training</h4><p>Workshops and professional development</p></div>
                 <div class="cert-item reveal"><i class="fas fa-flask"></i><h4>Materials &amp; Construction</h4><p>Technical training in construction materials and concrete</p></div>
             </div>
@@ -1180,7 +1407,7 @@
     <!-- ===== PUBLICATIONS ===== -->
     <section id="publications" style="background:var(--cream-dark);">
         <div class="container">
-            <div class="section-label">07 / Publications</div>
+            <div class="section-label">09 / Publications</div>
             <h2 class="section-title">Research &amp; publications.</h2>
             <p class="section-description">Research work in sustainable concrete, geopolymer materials, fire resistance, and advanced construction materials.</p>
             <div class="pub-list">
@@ -1194,7 +1421,7 @@
     <!-- ===== GALLERY ===== -->
     <section id="gallery">
         <div class="container">
-            <div class="section-label">08 / Gallery</div>
+            <div class="section-label">10 / Gallery</div>
             <h2 class="section-title">Engineering in practice.</h2>
             <p class="section-description">Laboratory research, materials testing, and construction engineering work.</p>
             <div class="gallery-grid">
@@ -1229,7 +1456,7 @@
     <!-- ===== LANGUAGES ===== -->
     <section id="languages" style="background:var(--cream-dark);">
         <div class="container">
-            <div class="section-label">09 / Languages</div>
+            <div class="section-label">11 / Languages</div>
             <h2 class="section-title">Communication across <br />engineering environments.</h2>
             <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(160px,1fr));">
                 <div class="card"><h3>English</h3><p style="color:var(--orange); font-weight:600; font-size:0.75rem;">Professional</p></div>
@@ -1244,7 +1471,7 @@
     <!-- ===== CONTACT ===== -->
     <section id="contact">
         <div class="container">
-            <div class="section-label" style="color:var(--orange);">10 / Contact</div>
+            <div class="section-label" style="color:var(--orange);">12 / Contact</div>
             <div class="contact-grid">
                 <div>
                     <h2 class="section-title">Let's build <br />something better.</h2>
@@ -1266,7 +1493,6 @@
             <div>
                 © <span id="year"></span> <span class="footer-name">Raad Mahmood</span> · Civil Engineer
                 <br />
-                <!-- ===== VISITOR COUNTER – HTML ===== -->
                 <span class="visitor-counter">
                     <i class="fas fa-eye"></i>
                     <span class="count" id="visitorCount">0</span>
@@ -1329,7 +1555,6 @@
                 return false;
             });
         });
-
         document.querySelectorAll('.gallery-item, .profile-image, .hero').forEach(el => {
             el.addEventListener('contextmenu', (e) => {
                 e.preventDefault();
@@ -1345,11 +1570,9 @@
             }
         });
 
-        // ===== VISITOR COUNTER – JAVASCRIPT =====
+        // ===== VISITOR COUNTER =====
         const COUNTER_KEY = 'raad-mahmood-portfolio-civileng-2026';
         const counterElement = document.getElementById('visitorCount');
-
-        // Only count once per browser per day (prevents refresh-spam inflating the number)
         function shouldCountVisit() {
             const today = new Date().toDateString();
             const lastVisit = localStorage.getItem('rm_last_visit');
@@ -1357,7 +1580,6 @@
             localStorage.setItem('rm_last_visit', today);
             return true;
         }
-
         async function updateVisitorCount() {
             const endpoint = shouldCountVisit()
                 ? `https://countapi.mileshilliard.com/api/v1/hit/${COUNTER_KEY}`
@@ -1371,9 +1593,66 @@
                 console.log('Visitor counter unavailable');
             }
         }
-
         updateVisitorCount();
-    </script>
 
+        // ===== BUILDING PROBLEMS HEALER SLIDER =====
+        const healerData = [
+            { title: 'Basement Waterproofing - Commercial Building', img: 'images/healer-1.jpg' },
+            { title: 'Roof Insulation & Waterproofing Application', img: 'images/healer-2.jpg' },
+            { title: 'Industrial Tank Coating & Epoxy Repair', img: 'images/healer-3.jpg' },
+            { title: 'Foundation Drainage System Installation', img: 'images/healer-4.jpg' },
+            { title: 'Concrete Crack Injection & Repair', img: 'images/healer-5.jpg' },
+            { title: 'Residential Terrace Waterproofing', img: 'images/healer-6.jpg' }
+        ];
+
+        const healerCard = document.getElementById('healerSlideCard');
+        const healerImage = document.getElementById('healerSlideImage');
+        const healerTitle = document.getElementById('healerSlideTitle');
+        const healerDotsContainer = document.getElementById('healerDots');
+        const healerPrevBtn = document.querySelector('.healer-prev');
+        const healerNextBtn = document.querySelector('.healer-next');
+
+        let currentHealerSlide = 0;
+
+        healerData.forEach((_, index) => {
+            const dot = document.createElement('button');
+            if (index === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => goToHealerSlide(index));
+            healerDotsContainer.appendChild(dot);
+        });
+        const healerDots = document.querySelectorAll('.healer-dots button');
+
+        function goToHealerSlide(index) {
+            currentHealerSlide = index;
+            const data = healerData[currentHealerSlide];
+            healerImage.src = data.img;
+            healerImage.alt = data.title;
+            healerTitle.textContent = data.title;
+            
+            healerDots.forEach((dot, idx) => {
+                dot.classList.toggle('active', idx === currentHealerSlide);
+            });
+        }
+
+        function nextHealerSlide() {
+            goToHealerSlide((currentHealerSlide + 1) % healerData.length);
+        }
+
+        function prevHealerSlide() {
+            goToHealerSlide((currentHealerSlide - 1 + healerData.length) % healerData.length);
+        }
+
+        healerPrevBtn.addEventListener('click', prevHealerSlide);
+        healerNextBtn.addEventListener('click', nextHealerSlide);
+
+        let healerInterval = setInterval(nextHealerSlide, 4000);
+        healerCard.addEventListener('mouseenter', () => clearInterval(healerInterval));
+        healerCard.addEventListener('mouseleave', () => {
+            clearInterval(healerInterval);
+            healerInterval = setInterval(nextHealerSlide, 4000);
+        });
+
+        goToHealerSlide(0);
+    </script>
 </body>
 </html>
