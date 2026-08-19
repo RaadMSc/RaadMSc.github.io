@@ -116,6 +116,7 @@
             align-items: center;
             justify-content: space-between;
         }
+        /* ===== HEADER BRAND ===== */
         .logo {
             display: flex;
             align-items: center;
@@ -126,6 +127,7 @@
             font-weight: 700;
             color: var(--green);
         }
+
         .logo-mark {
             width: 34px;
             height: 34px;
@@ -142,6 +144,7 @@
             position: relative;
             overflow: hidden;
         }
+
         .logo-mark::after {
             content: "";
             position: absolute;
@@ -152,11 +155,13 @@
             bottom: 6px;
             transform: rotate(-45deg);
         }
+
         .logo-text {
             display: block;
             min-width: 0;
             line-height: 1.15;
         }
+
         .logo-name {
             font-family: "Century Gothic", "Trebuchet MS", Arial, sans-serif;
             font-size: 1.02rem;
@@ -164,6 +169,7 @@
             letter-spacing: -0.035em;
             white-space: nowrap;
         }
+
         .logo-role {
             display: block;
             margin-top: 2px;
@@ -174,6 +180,19 @@
             font-weight: 600;
             white-space: nowrap;
         }
+
+        /* ===== MENU BUTTON BASE STYLING (Prevents browser quirks) ===== */
+        .menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.3rem;
+            color: var(--green);
+            cursor: pointer;
+            padding: 5px;
+            margin-right: -5px;
+        }
+
         .nav-links {
             display: flex;
             align-items: center;
@@ -182,6 +201,7 @@
             flex: 1;
             min-width: 0;
         }
+
         .nav-links a {
             font-size: 0.66rem;
             font-weight: 700;
@@ -193,23 +213,53 @@
             transition: color 0.2s, border-color 0.2s;
             white-space: nowrap;
         }
+
         .nav-links a:hover,
         .nav-links a.active {
             color: var(--orange);
             border-bottom-color: var(--orange);
         }
 
-        @media (max-width: 1100px) and (min-width: 921px) {
+        @media (max-width: 1200px) and (min-width: 1101px) {
             .logo {
                 flex-basis: 185px;
                 width: 185px;
             }
             .nav-links {
-                gap: 13px;
+                gap: 12px;
             }
             .nav-links a {
-                font-size: 0.60rem;
+                font-size: 0.58rem;
                 letter-spacing: 0.045em;
+            }
+        }
+
+        /* ===== RESPONSIVE HEADER (Moved up to 1100px to prevent overlap on all browsers) ===== */
+        @media (max-width: 1100px) {
+            .logo {
+                flex-basis: auto;
+                width: auto;
+                transform: translateX(-4px);
+            }
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 72px;
+                left: 20px;
+                right: 20px;
+                flex-direction: column;
+                background: var(--cream);
+                padding: 20px;
+                border: 1px solid var(--line);
+                border-radius: var(--radius);
+                box-shadow: var(--shadow);
+                gap: 10px;
+            }
+            .nav-links.show {
+                display: flex;
+            }
+            .menu-btn {
+                display: block;
             }
         }
 
@@ -1012,25 +1062,6 @@
                 grid-template-columns: 1fr;
                 gap: 6px;
             }
-            .nav-links {
-                display: none;
-                position: absolute;
-                top: 72px;
-                left: 20px;
-                right: 20px;
-                flex-direction: column;
-                background: var(--cream);
-                padding: 20px;
-                border: 1px solid var(--line);
-                border-radius: var(--radius);
-                box-shadow: var(--shadow);
-            }
-            .nav-links.show {
-                display: flex;
-            }
-            .menu-btn {
-                display: block;
-            }
             .footer-inner {
                 flex-direction: column;
                 text-align: center;
@@ -1127,7 +1158,7 @@
                 <div class="logo-mark">RM</div>
                 <div class="logo-text">
                     <div class="logo-name">Raad Mahmood</div>
-                    <span class="logo-role">Civil Engineer · Materials</span>
+                    <span class="logo-role">MSc Civil Engineer</span>
                 </div>
             </a>
             <button class="menu-btn" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
@@ -1362,16 +1393,15 @@
             <div class="aci-grid">
                 <div class="aci-badges">
                     <div class="badge-grid">
-                        <!-- Place your 8 ACI certificate images here. 
-                             Rename your images to aci-1.jpg, aci-2.jpg, ... aci-8.jpg for easy mapping -->
-                        <img src="images/aci/aci-1.jpg" alt="Low-Carbon Concrete Fundamentals" />
-                        <img src="images/aci/aci-2.jpg" alt="Low-Carbon Concrete Quantification" />
-                        <img src="images/aci/aci-3.jpg" alt="GFRP Bars Design" />
-                        <img src="images/aci/aci-4.jpg" alt="Concrete Constructability" />
-                        <img src="images/aci/aci-5.jpg" alt="Fundamentals of Concrete and Materials" />
-                        <img src="images/aci/aci-6.jpg" alt="Fundamentals of Concrete Construction" />
-                        <img src="images/aci/aci-7.jpg" alt="Repair Application Procedures" />
-                        <img src="images/aci/aci-8.jpg" alt="Anchorage Design" />
+                        <!-- Updated extensions to .png to match your uploaded files -->
+                        <img src="images/aci/aci-1.png" alt="Low-Carbon Concrete Fundamentals" />
+                        <img src="images/aci/aci-2.png" alt="Low-Carbon Concrete Quantification" />
+                        <img src="images/aci/aci-3.png" alt="GFRP Bars Design" />
+                        <img src="images/aci/aci-4.png" alt="Concrete Constructability" />
+                        <img src="images/aci/aci-5.png" alt="Fundamentals of Concrete and Materials" />
+                        <img src="images/aci/aci-6.png" alt="Fundamentals of Concrete Construction" />
+                        <img src="images/aci/aci-7.png" alt="Repair Application Procedures" />
+                        <img src="images/aci/aci-8.png" alt="Anchorage Design" />
                     </div>
                 </div>
                 <div class="aci-list">
