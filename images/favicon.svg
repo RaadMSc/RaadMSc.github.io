@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Dark green rounded square background -->
+  <rect width="100" height="100" fill="#0b211d" rx="16" />
+  <!-- Orange "RM" text -->
+  <text x="50" y="68" font-family="Georgia, 'Times New Roman', serif" font-size="48" font-weight="700" fill="#e6532f" text-anchor="middle">RM</text>
+</svg>
