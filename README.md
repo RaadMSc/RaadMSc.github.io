@@ -1,5 +1,9 @@
 ### Raad Mahmood (raadmsc)
 
+[![LinkedIn](https://shields.io)](https://linkedin.com)
+[![Location](https://shields.io)](https://google.com)
+[![Expertise](https://shields.io)](https://github.io)
+
 ### Civil Engineer | Concrete Admixtures & Waterproofing Expert | MSc Structural Materials Researcher
 
 Official professional portfolio and resource index for **Raad Mahmood** (raadmsc). This repository hosts technical structural datasets, engineering toolkits, and open-source documentation focused on chemical construction materials, sustainable concrete technologies, and advanced low-carbon geopolymer research. 
